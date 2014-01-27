@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>OSAScriptingDefinition</key>
+	<string>Focus.sdef</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -33,7 +39,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>BradJasper.focus.HelperTool</key>
-		<string>anchor apple generic and identifier "BradJasper.focus.HelperTool" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = J6KYVU254V)</string>
+		<string>anchor apple generic and identifier &quot;BradJasper.focus.HelperTool&quot; and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = J6KYVU254V)</string>
 	</dict>
 	<key>SUFeedURL</key>
 	<string>http://www.heyfocus.com/appcast.xml</string>

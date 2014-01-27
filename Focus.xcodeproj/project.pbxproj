@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3D40EA02189625EB00BEF45B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A241E1981875165C00A86DD1 /* Sparkle.framework */; };
+		3D40EA081896299500BEF45B /* JRFocusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40EA071896299500BEF45B /* JRFocusCommand.m */; };
+		3D40EA0B18962B3400BEF45B /* JRUnfocusCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40EA0A18962B3400BEF45B /* JRUnfocusCommand.m */; };
+		3D40EA0C18962EE600BEF45B /* Focus.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 3D40EA03189627B400BEF45B /* Focus.sdef */; };
 		A20C0A661842EB6800356F87 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A29A05CE1842E71B0022901D /* ConnectionManager.m */; };
 		A20CF68E18445A62000CBDA0 /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
 		A20CF68F18445A62000CBDA0 /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
@@ -144,6 +147,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D40EA03189627B400BEF45B /* Focus.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Focus.sdef; sourceTree = "<group>"; };
+		3D40EA061896299500BEF45B /* JRFocusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRFocusCommand.h; path = Applescript/JRFocusCommand.h; sourceTree = "<group>"; };
+		3D40EA071896299500BEF45B /* JRFocusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRFocusCommand.m; path = Applescript/JRFocusCommand.m; sourceTree = "<group>"; };
+		3D40EA0918962B3400BEF45B /* JRUnfocusCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRUnfocusCommand.h; path = Applescript/JRUnfocusCommand.h; sourceTree = "<group>"; };
+		3D40EA0A18962B3400BEF45B /* JRUnfocusCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRUnfocusCommand.m; path = Applescript/JRUnfocusCommand.m; sourceTree = "<group>"; };
 		A20CF68C18445A62000CBDA0 /* Focus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Focus.h; sourceTree = "<group>"; };
 		A20CF68D18445A62000CBDA0 /* Focus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Focus.m; sourceTree = "<group>"; };
 		A20CF69218445AB3000CBDA0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -275,6 +283,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D40EA051896296C00BEF45B /* AppleScript */ = {
+			isa = PBXGroup;
+			children = (
+				3D40EA061896299500BEF45B /* JRFocusCommand.h */,
+				3D40EA071896299500BEF45B /* JRFocusCommand.m */,
+				3D40EA0918962B3400BEF45B /* JRUnfocusCommand.h */,
+				3D40EA0A18962B3400BEF45B /* JRUnfocusCommand.m */,
+			);
+			name = AppleScript;
+			sourceTree = "<group>";
+		};
 		A20CF68B18445A52000CBDA0 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +418,7 @@
 		A2D57B081842AFB7008744DC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D40EA03189627B400BEF45B /* Focus.sdef */,
 				E4CBCCF515EBC58D0081DF5C /* MainMenu.xib */,
 				A2D57AF51841AC6A008744DC /* Images.xcassets */,
 				E456726C15E7E4B80050ECAB /* Uninstall.sh */,
@@ -518,6 +538,7 @@
 		E4ED7B8515E79B83002AD912 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				3D40EA051896296C00BEF45B /* AppleScript */,
 				A2703161184D908B00D11B81 /* FocusHTTProxy */,
 				A2CF79C51845658700A1566A /* NetworkSetupManager */,
 				A2CF79BF1845644E00A1566A /* PACFileManager */,
@@ -591,9 +612,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4ED7B9015E79B83002AD912 /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
+				E4ED7B7D15E79B83002AD912 /* Resources */,
 				E4ED7B7B15E79B83002AD912 /* Sources */,
 				E4ED7B7C15E79B83002AD912 /* Frameworks */,
-				E4ED7B7D15E79B83002AD912 /* Resources */,
 				E4C32DDB16023B43002AFAB3 /* Copy Files */,
 				A241E19A1875171500A86DD1 /* CopyFiles */,
 			);
@@ -681,6 +702,7 @@
 				A25242E718629C630097F28A /* FocusBlackholeProxy.py in Resources */,
 				A2307CE9184D5BCF00C2F291 /* focus in Resources */,
 				A2F6A4B6184EEE2700B07FC6 /* RHStatusItemView-Info.plist in Resources */,
+				3D40EA0C18962EE600BEF45B /* Focus.sdef in Resources */,
 				A2D11009187527E900245118 /* dsa_pub.pem in Resources */,
 				A2D57B0518428439008744DC /* README.md in Resources */,
 				A2D57B0418428439008744DC /* MIT-LICENSE in Resources */,
@@ -744,7 +766,9 @@
 				A242FB9218640E01008DEB21 /* NSAttributedString+hyperlinkFromString.m in Sources */,
 				A2221A741861194F009AE3E9 /* LoggerClient.m in Sources */,
 				A2D57B141842B81A008744DC /* NSTask+runCommand.m in Sources */,
+				3D40EA0B18962B3400BEF45B /* JRUnfocusCommand.m in Sources */,
 				E4ED7B8B15E79B83002AD912 /* AppDelegate.m in Sources */,
+				3D40EA081896299500BEF45B /* JRFocusCommand.m in Sources */,
 				A2F6A4B7184EEE2700B07FC6 /* RHStatusItemView.m in Sources */,
 				E4ED7B8D15E79B83002AD912 /* main.m in Sources */,
 				A2CF79C9184565AA00A1566A /* NetworkSetupManager.m in Sources */,

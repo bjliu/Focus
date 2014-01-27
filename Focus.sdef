@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<!--
+ Sources:
+ https://developer.apple.com/library/mac/samplecode/SimpleScripting/Listings/SimpleScripting_sdef.html
+ https://developer.apple.com/library/mac/samplecode/SimpleScriptingVerbs/Listings/SimpleScriptingVerbs_sdef.html
+ -->
+
+<!-- use XInclude to include the standard suite -->
+<dictionary xmlns:xi="http://www.w3.org/2003/XInclude">
+    <xi:include href="file:///System/Library/ScriptingDefinitions/CocoaStandard.sdef" xpointer="xpointer(/dictionary/suite)"/>
+
+    
+    <!-- Define the suite for focus -->
+    <suite name="Focus" code="Fcus"
+        description="Fork of Brad Jasper's Focus app, to support applescripting.">
+        
+        <!-- Simple commands -->
+        <command name="focus" code="FcusFcus" description="Turn on focus.">
+            <cocoa class="JRFocusCommand"/>
+            <result type="boolean" description "Returns true on success." />
+        </command>
+        
+        <command name="unfocus" code="FcusUnfc" description="Turn off focus.">
+            <cocoa class="JRUnfocusCommand"/>
+            <result type="boolean" description "Returns true on success." />
+        </command>
+    </suite>
+</dictionary>
