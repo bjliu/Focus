@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D40EA011896254200BEF45B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A241E1981875165C00A86DD1 /* Sparkle.framework */; };
+		3D40EA02189625EB00BEF45B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A241E1981875165C00A86DD1 /* Sparkle.framework */; };
 		A20C0A661842EB6800356F87 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A29A05CE1842E71B0022901D /* ConnectionManager.m */; };
 		A20CF68E18445A62000CBDA0 /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
 		A20CF68F18445A62000CBDA0 /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
@@ -263,7 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D40EA011896254200BEF45B /* Sparkle.framework in Frameworks */,
+				3D40EA02189625EB00BEF45B /* Sparkle.framework in Frameworks */,
 				A21B6166184140BE0085C4B7 /* SystemConfiguration.framework in Frameworks */,
 				A21B6164184140B70085C4B7 /* CFNetwork.framework in Frameworks */,
 				E4ED7B8415E79B83002AD912 /* Cocoa.framework in Frameworks */,
@@ -1062,7 +1062,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					/Users/brad/Projects/Focus/Frameworks,
 					/Users/jan/Programs/cocoa/Focus/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1081,7 +1080,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					/Users/brad/Projects/Focus/Frameworks,
 					/Users/jan/Programs/cocoa/Focus/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
