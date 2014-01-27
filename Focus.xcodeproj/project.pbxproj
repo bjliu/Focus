@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D40EA011896254200BEF45B /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A241E1981875165C00A86DD1 /* Sparkle.framework */; };
 		A20C0A661842EB6800356F87 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A29A05CE1842E71B0022901D /* ConnectionManager.m */; };
 		A20CF68E18445A62000CBDA0 /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
 		A20CF68F18445A62000CBDA0 /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
@@ -30,7 +31,6 @@
 		A22224211847CAF8008FD525 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = A222241F1847CAF8008FD525 /* LaunchAtLoginController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		A2307CE9184D5BCF00C2F291 /* focus in Resources */ = {isa = PBXBuildFile; fileRef = A2307CE8184D5BCF00C2F291 /* focus */; };
 		A241E19C187517DB00A86DD1 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A241E1981875165C00A86DD1 /* Sparkle.framework */; };
-		A241E19E1875204A00A86DD1 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A241E1981875165C00A86DD1 /* Sparkle.framework */; };
 		A242FB9218640E01008DEB21 /* NSAttributedString+hyperlinkFromString.m in Sources */ = {isa = PBXBuildFile; fileRef = A242FB9118640E01008DEB21 /* NSAttributedString+hyperlinkFromString.m */; };
 		A25242E718629C630097F28A /* FocusBlackholeProxy.py in Resources */ = {isa = PBXBuildFile; fileRef = A25242E618629C630097F28A /* FocusBlackholeProxy.py */; };
 		A265E80B184464340098D0AB /* Focus.m in Sources */ = {isa = PBXBuildFile; fileRef = A20CF68D18445A62000CBDA0 /* Focus.m */; };
@@ -50,7 +50,6 @@
 		A2CF79CC184565FE00A1566A /* NetworkSetupManagerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CF79CB184565FE00A1566A /* NetworkSetupManagerTestCase.m */; };
 		A2CF79D3184567C500A1566A /* PACFileManagerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CF79D2184567C500A1566A /* PACFileManagerTestCase.m */; };
 		A2D11009187527E900245118 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = A2D11008187527E900245118 /* dsa_pub.pem */; };
-		A2D57AF31841662F008744DC /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2D57AF21841662F008744DC /* README.txt */; };
 		A2D57AF61841AC6A008744DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2D57AF51841AC6A008744DC /* Images.xcassets */; };
 		A2D57B0318428439008744DC /* FFYDaemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D57B0018428439008744DC /* FFYDaemonController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w"; }; };
 		A2D57B0418428439008744DC /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A2D57B0118428439008744DC /* MIT-LICENSE */; };
@@ -178,7 +177,6 @@
 		A2CF79CB184565FE00A1566A /* NetworkSetupManagerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkSetupManagerTestCase.m; sourceTree = "<group>"; };
 		A2CF79D2184567C500A1566A /* PACFileManagerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACFileManagerTestCase.m; sourceTree = "<group>"; };
 		A2D11008187527E900245118 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Resources/dsa_pub.pem; sourceTree = "<group>"; };
-		A2D57AF21841662F008744DC /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		A2D57AF418416DAA008744DC /* FocusPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusPrefixHeader.pch; sourceTree = "<group>"; };
 		A2D57AF51841AC6A008744DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Resources/Images.xcassets; sourceTree = "<group>"; };
 		A2D57AFF18428439008744DC /* FFYDaemonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFYDaemonController.h; sourceTree = "<group>"; };
@@ -265,9 +263,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D40EA011896254200BEF45B /* Sparkle.framework in Frameworks */,
 				A21B6166184140BE0085C4B7 /* SystemConfiguration.framework in Frameworks */,
 				A21B6164184140B70085C4B7 /* CFNetwork.framework in Frameworks */,
-				A241E19E1875204A00A86DD1 /* Sparkle.framework in Frameworks */,
 				E4ED7B8415E79B83002AD912 /* Cocoa.framework in Frameworks */,
 				E4C372F815E7D4D4007554D3 /* ServiceManagement.framework in Frameworks */,
 				E4C372FA15E7D4D8007554D3 /* Security.framework in Frameworks */,
@@ -488,7 +486,6 @@
 				A20CF69A18445B09000CBDA0 /* Tests */,
 				E4ED7B8215E79B83002AD912 /* Frameworks */,
 				E4ED7B8015E79B83002AD912 /* Products */,
-				A2D57AF21841662F008744DC /* README.txt */,
 			);
 			sourceTree = "<group>";
 		};
@@ -599,7 +596,6 @@
 				E4ED7B7D15E79B83002AD912 /* Resources */,
 				E4C32DDB16023B43002AFAB3 /* Copy Files */,
 				A241E19A1875171500A86DD1 /* CopyFiles */,
-				A241E19D1875187D00A86DD1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -681,7 +677,6 @@
 				E4CBCCF315EBC58D0081DF5C /* MainMenu.xib in Resources */,
 				A2D57AF61841AC6A008744DC /* Images.xcassets in Resources */,
 				E4CBCCF015EBC55F0081DF5C /* Common.strings in Resources */,
-				A2D57AF31841662F008744DC /* README.txt in Resources */,
 				E4CBCD2A15EC191D0081DF5C /* InfoPlist.strings in Resources */,
 				A25242E718629C630097F28A /* FocusBlackholeProxy.py in Resources */,
 				A2307CE9184D5BCF00C2F291 /* focus in Resources */,
@@ -695,22 +690,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A241E19D1875187D00A86DD1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "LOCATION=\"./Frameworks\"\nIDENTITY=\"Developer ID Application: Bradley Jasper (J6KYVU254V)\"\ncodesign --verbose --force --sign \"$IDENTITY\" \"$LOCATION/Sparkle.framework\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A20CF69418445B09000CBDA0 /* Sources */ = {
@@ -999,7 +978,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Bradley Jasper (J6KYVU254V)";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1046,7 +1025,7 @@
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Bradley Jasper (J6KYVU254V)";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
@@ -1079,10 +1058,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/brad/Projects/Focus/Frameworks,
+					/Users/jan/Programs/cocoa/Focus/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = App/FocusPrefixHeader.pch;
@@ -1096,10 +1077,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					/Users/brad/Projects/Focus/Frameworks,
+					/Users/jan/Programs/cocoa/Focus/Frameworks,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = App/FocusPrefixHeader.pch;
