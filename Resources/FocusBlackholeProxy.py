@@ -3,7 +3,7 @@
 """
     Focus HTTP Blackhole proxy
 """
-import optparse, socket, thread
+import optparse, socket
 
 class ProxyConnectionHandler(object):
     def __init__(self, connection, address, timeout=60, content="Get back to work!", **kwargs):
@@ -13,7 +13,7 @@ class ProxyConnectionHandler(object):
 def start_proxy(host='localhost', port=8401, content="Get back to work!"):
 
     try:
-        print "Serving blackhole proxy on %s:%d" % (host, port)
+        print("Serving blackhole proxy on %s:%d" % (host, port))
         soc = socket.socket(socket.AF_INET)
         soc.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         soc.bind((host, port))
@@ -25,7 +25,7 @@ def start_proxy(host='localhost', port=8401, content="Get back to work!"):
             args = soc.accept() + (1,)
             thread.start_new_thread(ProxyConnectionHandler, args, kwargs)
     except:
-        print "Shutting blackhole proxy down..."
+        print("Shutting blackhole proxy down...")
         soc.close()
         raise
         
