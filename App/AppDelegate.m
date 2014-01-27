@@ -77,7 +77,7 @@
     
     // If we're not installed—just quit
     if (!self.installerManager.installed) {
-        [self error:@"We're sorry, but Focus couldn't install it's helper correctly so we're exiting. Please try running Focus again to try re-installing."];
+        [self error:@"We're sorry, but Focus couldn't install its helper correctly so we're exiting. Please try running Focus again to try re-installing."];
         [[NSApplication sharedApplication] terminate:nil];
         return;
     }
