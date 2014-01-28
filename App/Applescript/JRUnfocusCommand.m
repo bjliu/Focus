@@ -14,8 +14,8 @@
 
 -(id)performDefaultImplementation {
     AppDelegate *delegate = (AppDelegate *)[NSApp delegate];
-    BOOL success = [delegate.focus focus];
-    return [NSNumber numberWithBool:success];
+    [delegate goUnfocus];
+    return nil;
 }
 
 @end

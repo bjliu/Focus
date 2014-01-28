@@ -19,12 +19,10 @@
         <!-- Simple commands -->
         <command name="focus" code="FcusFcus" description="Turn on focus.">
             <cocoa class="JRFocusCommand"/>
-            <result type="boolean" description="Returns true on success." />
         </command>
         
         <command name="unfocus" code="FcusUnfc" description="Turn off focus.">
             <cocoa class="JRUnfocusCommand"/>
-            <result type="boolean" description="Returns true on success." />
         </command>
     </suite>
 </dictionary>

@@ -2,5 +2,7 @@
 @class Focus;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-@property (strong, readonly, nonatomic) Focus *focus;
+//Exposed for applescripting
+-(void)goFocus;
+-(void)goUnfocus;
 @end
